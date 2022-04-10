@@ -5,7 +5,7 @@ const router = new express.Router();
 
 router.get('/myapi',  (req, res) => {
     try {
-        const response = new Response(null, 'Hellow World', null);
+        const response = new Response(null, 'Hello World', null);
         res.status(201).send(response.getResponse());
     } catch (e) {
         const response = new Response(null, 'error', 'Internal Server Error');
